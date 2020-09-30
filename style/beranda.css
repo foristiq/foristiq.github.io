@@ -650,4 +650,8 @@ aside table{
 		margin-bottom: 60px;
 	}
 
+	article img{
+		width: 90%;
+	}
+
 }
