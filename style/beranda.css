@@ -271,6 +271,10 @@ nav{
 	margin-bottom: 10px;
 }
 
+.subcontainer-contentslider a:active{
+	background-color: green;
+}
+
 #content-section input[type=radio] {
 	position: relative;
 	top: 440px;
@@ -312,12 +316,20 @@ nav{
 	margin-top: 50px;
 }
 
+#content{
+	width: 68%;
+}
+
 article{
-	width: 75%;
 	background-color: rgba(183, 186, 192, 0.659);
 	display: flex;
 	padding: 40px 20px;
 	margin: 0 0 20px 150px;
+}
+
+article img{
+	width: 50%;
+	margin-left: -100px;
 }
 
 .text-article{
@@ -333,30 +345,28 @@ article{
 	color: rgb(42, 42, 48);
 }
 
-
-article img{
-	height: 300px;
-	width: 400px;
-	margin-left: -100px;
+aside{
+	width: 300px;
+	position: relative;
+	margin-left: 20px;
 }
 
-.idcard{
-	width: 300px;
+aside .idcard{
+	width: 100%;
 	height: 450px;
 	background-size: cover;
 	position: relative;
-	left: -20px;
 	box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
 }
 
 #image-founder{
-	height: 150px;
-	width: 150px;
+	height: 120px;
+	width: 120px;
 	background-size: cover;
 	border-radius: 50%;
 	position: absolute;
 	top: 25px;
-	transform: translateX(50%);
+	transform: translateX(74%);
 	border-top: 2px solid white;
 	border-right: 2px solid grey;
 	border-bottom: 2px solid grey;
@@ -365,37 +375,61 @@ article img{
 
 aside table{
 	position: absolute;
-	top: 50%;
-	transform: translateX(7%);
+	top: 40%;
+	transform: translateX(2%);
 	color: white;
-	font-weight: bolder;
+	font-size: 10px;
+	font-weight: bold;
 }
 
-.akun-founder{
+.image-partner{
 	position: absolute;
-	bottom: 10%;
-	transform: translateX(47%);
-	width: 70px;
+	bottom: 30%;
+	transform: translateX(4%);
 	display: flex;
 }
 
-.akun-founder a{
+.image-partner a{
 	display: block;
 	border: none;
-	margin: 20px;
+	margin: 5px;
 }
 
-.akun-founder a img{
-	width: 35px;
-	height: 35px;
-	border-radius: 7px;
+.image-partner a img{
+	width: 55px;
+	height: 55px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 4px black;
+	border-top: 2px solid white;
+	border-right: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-left: 2px solid white;
+}
+
+.link-social{
+	position: absolute;
+	display: flex;
+	bottom: 13%;
+	transform: translateX(42%);
+}
+
+.link-social a{
+	display: block;
+	border: none;
+	margin: 10px;
+}
+
+.link-social a img{
+	width: 33px;
+	height: 33px;
+	border-radius: 2px;
 	box-shadow: 3px 3px 4px black;
 }
 
 .email-founder{
 	position: absolute;
 	bottom: 7%;
-	transform: translateX(60%);
+	transform: translateX(50%);
 	color: white;
 	font-size: 10px;
 }
@@ -479,14 +513,14 @@ aside table{
 	font-weight: bold;
 }
 
-.container-footer{
+footer{
 	padding: 20px;
 	background-color: black;
 	text-align: center;
 	color: wheat;
 }
 
-.container-footer p a{
+footer p a{
 	text-decoration: none;
 	color: skyblue;
 }
@@ -498,53 +532,6 @@ aside table{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* versi small laptop */
-@media screen and (max-width: 1160px){
-	#macon-content{
-		flex-direction: column;
-	}
-
-	article{
-		flex-direction: column;
-		margin: auto;
-		margin-bottom: 60px;
-	}
-
-	#content{
-		margin-top: 65px;
-	}
-
-	article img{
-		height: 300px;
-		width: 400px;
-		margin: auto;
-		margin-top: -70px;
-	}
-
-	.idcard{
-		left: 0px;
-		margin: auto;
-	}
-
-}
 
 
 /* UKURAN TABLET and LANSCAPE*/
@@ -562,6 +549,31 @@ aside table{
 		width: 50%;
 	}
 
+	.judul-kesanwirausaha{
+		margin-bottom: 100px;
+	}
+
+	#macon-content{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	article{
+		width: 100%;
+		margin: auto;
+		margin-bottom: 100px;
+		flex-direction: column;
+	}
+
+	article img{
+		margin: auto;
+		margin-top: -100px;
+		width: 90%;
+	}
+
+	.container-sumber{
+		width: 80%;
+	}
 }
 
 
@@ -639,19 +651,8 @@ aside table{
 		transform: translateX(-67px);
 	}
 
-	#macon-content{
-		flex-direction: column;
-	}
-
-
-	article{
-		width: 85%;
-		margin: auto;
-		margin-bottom: 60px;
-	}
-
-	article img{
-		width: 90%;
+	.container-sumber, .cont{
+		justify-content: center;
 	}
 
 }
