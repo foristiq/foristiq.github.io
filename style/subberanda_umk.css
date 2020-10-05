@@ -468,11 +468,21 @@ nav{
     }
 
     .jumbotron-materi{
-        flex-direction: column;
-    }
+		width: 100%;
+		flex-direction: column;
+	}
 
     .jumbotron-materi img{
-        width: 400px;
-        margin: 5px;
-    }
+        width: 90%;
+		margin: auto;
+		margin-bottom: 5px;
+	}
+
+	.list-resepmakanan1{
+		justify-content: space-between;
+	}
+
+	.resep-makanan1{
+		width: 160px;
+	}
 }
