@@ -162,6 +162,11 @@ nav{
 	box-shadow: inset -3px -3px 8px 0 rgba(48, 167, 71, 0.823), inset 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
+#copyright-mobile{
+	display: none;
+	margin: auto;
+}
+
 
 
 
@@ -273,20 +278,12 @@ nav{
 		flex-direction: column;
 	}
 
-	.container-contentslider{
-		width: 60%;
-	}
-
-	.subcontainer-contentslider{
-		padding: 0;
-	}
-
-	input[type=radio] {
-		transform: translateX(-67px);
-	}
-
-	.container-sumber, .cont{
-		justify-content: center;
+	#copyright-mobile{
+		display: block;
+		position: absolute;
+		bottom: 20px;
+		font-weight: bold;
+		color: rgb(69, 67, 67);
 	}
 
 }
