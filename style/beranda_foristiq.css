@@ -260,6 +260,9 @@ nav{
 	}
 
 	#donasi-btn{
+		position: absolute;
+		margin: auto;
+		bottom: 80px;
 		padding: -1px 25px ;
 		border-radius: 8px;
 	}
@@ -267,7 +270,7 @@ nav{
 	#copyright-mobile{
 		display: block;
 		position: absolute;
-		bottom: 20px;
+		bottom: 40px;
 		font-weight: bold;
 		color: rgb(69, 67, 67);
 	}
