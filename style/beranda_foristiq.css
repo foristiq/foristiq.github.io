@@ -7,6 +7,7 @@ body {
 	font-family: sans-serif;
 	background-color: rgb(243, 251, 252);
 	overflow-x: hidden;
+	height: 2000px;
 }
 
 
@@ -177,7 +178,49 @@ nav{
 	display: none;
 }
 
+article{
+	display: flex;
+	margin-top: 30px;
+}
 
+/* konten artikel */
+
+#content{
+	width: 90%;
+	margin: auto;
+}
+.image-article{
+	width: 40%;
+}
+
+.container-textarticle{
+	padding-left: 30px;
+}
+
+.judul-artikel{
+	font-size: 50px;
+	color: rgb(108, 107, 107);
+	margin-top: 15px;
+}
+
+.uraian-artikel{
+	font-size: 25px;
+	margin-top: 25px;
+	color: rgb(74, 74, 74);
+	font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.article-btn{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 25px;
+	background-color: rgb(47, 47, 247);
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
 
 
 
@@ -195,6 +238,20 @@ nav{
 
 	#jumbotron-image{
 		margin-top: 60px;
+	}
+
+	article{
+		flex-direction: column;
+	}
+
+	.image-article{
+		width: 80%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.container-textarticle{
+		text-align: center;
 	}
 
 	
