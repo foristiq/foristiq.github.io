@@ -167,6 +167,16 @@ nav{
 	margin: auto;
 }
 
+/* JUMBOTRON */
+
+#jumbotron-image{
+	width: 100%;
+}
+
+#jumbotron-mobile{
+	display: none;
+}
+
 
 
 
@@ -183,40 +193,11 @@ nav{
 		width: 70%;
 	}
 
-	.container-contentslider{
-		width: 50%;
+	#jumbotron-image{
+		margin-top: 60px;
 	}
 
-	.judul-kesanwirausaha{
-		margin-bottom: 100px;
-	}
-
-	#macon-content{
-		flex-direction: column;
-		align-items: center;
-	}
 	
-	#content{
-		width: 90%;
-		margin: auto;
-	}
-
-	article{
-		width: 90%;
-		margin: auto;
-		margin-bottom: 100px;
-		flex-direction: column;
-	}
-
-	article img{
-		margin: auto;
-		margin-top: -100px;
-		width: 90%;
-	}
-
-	.container-sumber{
-		width: 80%;
-	}
 }
 
 
@@ -278,12 +259,27 @@ nav{
 		flex-direction: column;
 	}
 
+	#donasi-btn{
+		padding: -1px 25px ;
+		border-radius: 8px;
+	}
+
 	#copyright-mobile{
 		display: block;
 		position: absolute;
 		bottom: 20px;
 		font-weight: bold;
 		color: rgb(69, 67, 67);
+	}
+
+	#jumbotron-image{
+		display: none;
+	}
+
+	#jumbotron-mobile{
+		display: block;
+		width: 100%;
+		padding-top:70px;
 	}
 
 }
