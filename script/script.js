@@ -12,7 +12,7 @@ window.onscroll = function () {
 }
 navMenu.addEventListener('click',function(){
     if( navMenu.innerHTML === "Menu"){
-        navMenu.innerHTML = "Close"
+        navMenu.innerHTML = "Tutup"
     }
 
     else{
