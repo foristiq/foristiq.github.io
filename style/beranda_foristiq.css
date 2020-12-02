@@ -7,7 +7,6 @@ body {
 	font-family: sans-serif;
 	background-color: rgb(243, 251, 252);
 	overflow-x: hidden;
-	height: 2000px;
 }
 
 
@@ -147,6 +146,7 @@ nav{
 	padding: 5px;
 	border: none;
 	position: relative;
+	cursor: pointer;
 }
 
 #donasi-btn{
@@ -178,12 +178,31 @@ nav{
 	display: none;
 }
 
+
+.judul-konten{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 35px;
+	color: rgb(51, 50, 50);
+	font-weight: bolder;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+.garis-pemutus{
+	background-color: grey;
+	height: 5px;
+	width: 100px;
+	margin: auto;
+	margin-bottom: 40px;
+	border-radius: 3px;
+}
+/* konten artikel */
+
 article{
 	display: flex;
 	margin-top: 30px;
 }
 
-/* konten artikel */
 
 #content{
 	width: 90%;
@@ -204,7 +223,7 @@ article{
 }
 
 .uraian-artikel{
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 25px;
 	color: rgb(74, 74, 74);
 	font-family: 'Noto Sans TC', sans-serif;
@@ -222,7 +241,114 @@ article{
 	font-weight: bold;
 }
 
+.article-btn:hover{
+	background-color: skyblue;
+}
 
+/* SUMBER */
+.judul-sumber, .judul-sosmed{
+	margin-top: 80px;
+}
+
+.container-sumber{
+	display: flex;
+	width: 70%;
+	margin: auto;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	
+}
+
+.sumber-sumber{
+	width: 140px;
+}
+
+.icon-sumber{
+	width: 100%;
+}
+
+.caption-sumber{
+	color: rgb(24, 88, 105);
+	text-align: center;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+/* SOSMED */
+.judul-sosmed{
+	margin-bottom: 5px;
+}
+
+#caption-sosmed{
+	margin-bottom: 30px;
+	text-align: center;
+	color: rgb(38, 104, 131);
+}
+
+.container-sosmed{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+	
+}
+
+.iconlink-sosmed{
+	display: inline-block;
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.iconlink-sosmed:hover{
+	transform: scale(1.2);
+}
+
+.image-linksosmed{
+	width: 100%;
+}
+
+.text-linksosmed{
+	font-size: 17px;
+	font-weight: bolder;
+}
+
+#facebook-textlink{
+	color: rgb(37, 37, 185);
+}
+
+#twitter-textlink{
+	color: rgb(110, 197, 233);
+}
+
+#youtube-textlink{
+	color: rgb(211, 24, 24);
+}
+
+#instagram-textlink{
+	color: rgb(180, 30, 125);
+}
+
+#bottom-brand{
+	display: block;
+	width: 40%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 130px;
+}
+
+footer{
+	background-color: skyblue;
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: yellow;
+}
 
 
 /* UKURAN TABLET */
@@ -245,15 +371,24 @@ article{
 	}
 
 	.image-article{
-		width: 80%;
+		width: 90%;
 		margin: auto;
 		margin-bottom: 20px;
 	}
 
 	.container-textarticle{
 		text-align: center;
+		padding-left: 0;
 	}
 
+	.judul-artikel{
+		font-size: 40px;
+	}
+
+	.container-sosmed{
+		width: 80%;
+	}
+	
 	
 }
 
