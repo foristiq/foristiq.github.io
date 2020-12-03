@@ -17,17 +17,17 @@ body {
 	justify-content: space-evenly;
 	padding-top: 30px;
 	position: fixed;
-	background-color: rgb(243, 251, 252);
+	background-color: rgb(161, 208, 222);
 	height: 70px;
 	z-index: 99;
 }
 
 .container-navbar.scrolled{
 	transition: all 0.7s;
-	background-color: rgb(233, 240, 242);
+	background-color: rgb(146, 197, 212);
 	border-bottom: 1px solid rgb(213, 216, 216);
 	height: 40px;
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 .logo img{
@@ -35,7 +35,7 @@ body {
 }
 
 .tombol-neu{
-	box-shadow: -2px -2px 5px 0  rgb(244, 249, 250), 1px 1px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px -2px 5px 0  rgb(161, 208, 222), 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .tombol-neu:active{
@@ -67,7 +67,7 @@ nav{
 }
 
 .navbar-link{
-	background-color: rgb(204, 235, 239);
+    background-color: rgb(204, 235, 239);
 }
 
 .navbar-link, .list-materiusaha{
@@ -171,11 +171,21 @@ nav{
 /* JUMBOTRON */
 
 #jumbotron-image{
-	width: 100%;
+    width: 100%;
+    margin-top: 100px;
 }
 
 #jumbotron-mobile{
 	display: none;
+}
+
+#textslogan-resepmakanan{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: -50px;
+    border-radius: 10px;
+    margin-bottom: 300px;
 }
 
 
@@ -196,83 +206,6 @@ nav{
 	margin-bottom: 40px;
 	border-radius: 3px;
 }
-/* konten artikel */
-
-article{
-	display: flex;
-	margin-top: 30px;
-}
-
-
-#content{
-	width: 90%;
-	margin: auto;
-}
-.image-article{
-	width: 40%;
-}
-
-.container-textarticle{
-	padding-left: 30px;
-}
-
-.judul-artikel{
-	font-size: 50px;
-	color: rgb(108, 107, 107);
-	margin-top: 15px;
-}
-
-.uraian-artikel{
-	font-size: 20px;
-	margin-top: 25px;
-	color: rgb(74, 74, 74);
-	font-family: 'Noto Sans TC', sans-serif;
-
-}
-
-.article-btn{
-	display: inline-block;
-	padding: 10px;
-	border-radius: 5px;
-	margin-top: 25px;
-	background-color: rgb(47, 47, 247);
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.article-btn:hover{
-	background-color: skyblue;
-}
-
-/* SUMBER */
-.judul-sumber, .judul-sosmed{
-	margin-top: 80px;
-}
-
-.container-sumber{
-	display: flex;
-	width: 70%;
-	margin: auto;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	
-}
-
-.sumber-sumber{
-	width: 140px;
-}
-
-.icon-sumber{
-	width: 100%;
-}
-
-.caption-sumber{
-	color: rgb(24, 88, 105);
-	text-align: center;
-	font-family: 'Noto Sans TC', sans-serif;
-}
-
 
 /* SOSMED */
 .judul-sosmed{
@@ -351,6 +284,10 @@ footer a{
 }
 
 
+
+
+
+
 /* UKURAN TABLET */
 @media screen and (max-width: 1000px){
 
@@ -362,33 +299,9 @@ footer a{
 		width: 70%;
 	}
 
-	#jumbotron-image{
-		margin-top: 60px;
-	}
-
-	article{
-		flex-direction: column;
-	}
-
-	.image-article{
-		width: 90%;
-		margin: auto;
-		margin-bottom: 20px;
-	}
-
-	.container-textarticle{
-		text-align: center;
-		padding-left: 0;
-	}
-
-	.judul-artikel{
-		font-size: 40px;
-	}
-
-	.container-sumber{
-		width: 85%;
-	}
-
+	#textslogan-resepmakanan{
+        width: 70%;
+    }
 
 	.container-sosmed{
 		width: 80%;
@@ -396,9 +309,6 @@ footer a{
 	
 	
 }
-
-
-
 
 
 
@@ -444,7 +354,16 @@ footer a{
 		transform: translateX(0);
 		height: 100vh;
 		
-	}
+    }
+    
+    .navbar-link{
+        background-color: rgb(204, 235, 239);
+        box-shadow: -2px -2px 5px 0  rgb(244, 249, 250), 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .dropdown{
+        box-shadow: -2px -2px 5px 0  rgb(244, 249, 250), 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    
 
 	.list-materiusaha{
 		position: relative;
@@ -473,13 +392,15 @@ footer a{
 	}
 
 	#jumbotron-image{
-		display: none;
+		margin-top: 70px;
 	}
 
-	#jumbotron-mobile{
-		display: block;
-		width: 100%;
-		padding-top:70px;
-	}
+	
+    
+    #textslogan-resepmakanan{
+        width: 80%;
+        margin-top: -30px;
+    }
+
 
 }
