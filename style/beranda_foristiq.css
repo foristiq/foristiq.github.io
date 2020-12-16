@@ -197,23 +197,21 @@ nav{
 	border-radius: 3px;
 }
 /* konten artikel */
+.content{
+	width: 90%;
+	margin: auto;
+}
 
 article{
 	display: flex;
 	margin-top: 30px;
+	margin-top: 100px;
 }
 
 
-#content{
-	width: 90%;
-	margin: auto;
-}
 .image-article{
 	width: 40%;
-}
-
-.container-textarticle{
-	padding-left: 30px;
+	box-shadow: 1px 1px 5px grey;
 }
 
 .judul-artikel{
@@ -230,6 +228,7 @@ article{
 
 }
 
+
 .article-btn{
 	display: inline-block;
 	padding: 10px;
@@ -243,6 +242,18 @@ article{
 
 .article-btn:hover{
 	background-color: skyblue;
+}
+
+#artikel-ayampetelur-su{
+	flex-direction: row-reverse;
+}
+
+#container-textarticle-resepmakanan{
+	padding-left: 30px;
+}
+
+#container-textarticle-ayampetelursu{
+	padding-right: 30px;
 }
 
 /* SUMBER */
@@ -282,7 +293,8 @@ article{
 #caption-sosmed{
 	margin-bottom: 30px;
 	text-align: center;
-	color: rgb(38, 104, 131);
+	color: rgb(62, 150, 144);
+	font-weight: bold;
 }
 
 .container-sosmed{
@@ -378,7 +390,18 @@ footer a{
 
 	.container-textarticle{
 		text-align: center;
-		padding-left: 0;
+	}
+
+	#artikel-ayampetelur-su{
+		flex-direction: column;
+	}
+
+	#container-textarticle-resepmakanan{
+		padding-left: 0px;
+	}
+	
+	#container-textarticle-ayampetelursu{
+		padding-right: 0px;
 	}
 
 	.judul-artikel{
@@ -407,7 +430,7 @@ footer a{
 
 
 /* NAVBAR & HEADER */
-@media screen and (max-width: 670px){
+@media screen and (max-width: 600px){
 	.container-navbar{
 		justify-content: space-evenly;
 		padding-top: 0;
