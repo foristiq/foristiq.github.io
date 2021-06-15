@@ -1,0 +1,514 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: rgb(243, 251, 252);
+	overflow-x: hidden;
+}
+
+
+/* NAVBAR & HEADER */
+.container-navbar{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 30px;
+	position: fixed;
+	background-color: rgb(243, 251, 252);
+	height: 70px;
+	z-index: 99;
+}
+
+.container-navbar.scrolled{
+	transition: all 0.7s;
+	background-color: rgb(233, 240, 242);
+	border-bottom: 1px solid rgb(213, 216, 216);
+	height: 40px;
+	padding: 10px 0;
+}
+
+.logo img{
+	width: 150px;
+}
+
+.tombol-neu{
+	box-shadow: -2px -2px 5px 0  rgb(244, 249, 250), 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tombol-neu:active{
+	box-shadow: inset -3px -3px 8px 0 rgba(188, 230, 242, 0.823), inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	justify-content: flex-end;
+}
+
+
+.navlink-list{
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	width: 65%;
+}
+.navmenu, .navbar-link, .dropdown, .list-materiusaha{
+	height: 34px;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(77, 77, 78);
+	padding: 1px 7px;
+	border-radius: 5px;
+}
+
+.navbar-link{
+	background-color: rgb(204, 235, 239);
+}
+
+.navbar-link, .list-materiusaha{
+	text-decoration: none;
+	line-height: 34px;
+}
+
+.navbar-dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+}
+
+.list-materiusaha{
+	margin-top: 20px;
+	background-color: rgb(144, 226, 237);
+	color: rgb(237, 254, 255);
+	
+}
+
+.navbar-dropdown:hover .dropdown-menu{
+	display: block;
+	min-width: 230px;
+}
+
+.logo-captionbrand{
+	display: none;
+}
+
+#logo-usahamandiriku{
+	height: 140px;
+	width: 120px;
+	background-size: cover;
+	margin: auto;
+	margin-bottom: 3px;
+	position: relative;
+	z-index: -1;
+}
+
+#slogan-usahamandiriku{
+	color: #38B6FF;
+	font-weight: bolder;
+	font-family: 'Finger Paint', cursive;
+	font-size: 22px;
+	text-align: center;
+}
+
+
+
+.navbar-link:hover,.list-materiusaha:hover, .dropdown:hover{
+	color: rgb(13, 13, 196);
+}
+
+.dropdown, .navmenu{
+	display: block;
+	border: none;
+	outline: none;
+	height: 37px;
+}
+.dropdown{
+	background-color: transparent;
+}
+.dropdown:active{
+	box-shadow: inset -3px -3px 8px 0 rgba(255, 255, 255, 0.823), inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navmenu{
+	display: none;
+	height: 34px;
+	color: rgb(238, 253, 254);
+	font-size: larger;
+	font-weight: bold;
+	padding: 5px;
+	border: none;
+	position: relative;
+	cursor: pointer;
+}
+
+#donasi-btn{
+	background-color: rgb(2, 154, 70);
+	border-radius: 12px;
+	color: white;
+}
+
+#donasi-btn:hover{
+	color: yellow;
+}
+
+#donasi-btn:active{
+	box-shadow: inset -3px -3px 8px 0 rgba(48, 167, 71, 0.823), inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#copyright-mobile{
+	display: none;
+	margin: auto;
+}
+
+/* JUMBOTRON */
+
+#jumbotron-image{
+	width: 100%;
+}
+
+#jumbotron-mobile{
+	display: none;
+}
+
+
+.judul-konten{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 35px;
+	color: rgb(51, 50, 50);
+	font-weight: bolder;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+.garis-pemutus{
+	background-color: grey;
+	height: 5px;
+	width: 100px;
+	margin: auto;
+	margin-bottom: 40px;
+	border-radius: 3px;
+}
+/* konten artikel */
+.content{
+	width: 90%;
+	margin: auto;
+}
+
+article{
+	display: flex;
+	margin-top: 30px;
+	margin-top: 100px;
+}
+
+
+.image-article{
+	width: 40%;
+	box-shadow: 1px 1px 5px grey;
+}
+
+.judul-artikel{
+	font-size: 50px;
+	color: rgb(108, 107, 107);
+	margin-top: 15px;
+}
+
+.uraian-artikel{
+	font-size: 20px;
+	margin-top: 25px;
+	color: rgb(74, 74, 74);
+	font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+
+.article-btn{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 25px;
+	background-color: rgb(47, 47, 247);
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.article-btn:hover{
+	background-color: skyblue;
+}
+
+#artikel-wisatasekitar{
+	flex-direction: row-reverse;
+}
+
+#container-textarticle-resepmakanan{
+	padding-left: 30px;
+}
+
+#container-textarticle-wisatasekitar{
+	padding-right: 30px;
+}
+
+/* SUMBER */
+.judul-sumber, .judul-sosmed{
+	margin-top: 80px;
+}
+
+.container-sumber{
+	display: flex;
+	width: 70%;
+	margin: auto;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	
+}
+
+.sumber-sumber{
+	width: 140px;
+}
+
+.icon-sumber{
+	width: 100%;
+}
+
+.caption-sumber{
+	color: rgb(24, 88, 105);
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+/* SOSMED */
+.judul-sosmed{
+	margin-bottom: 5px;
+}
+
+#caption-sosmed{
+	margin-bottom: 30px;
+	text-align: center;
+	color: rgb(62, 150, 144);
+	font-weight: bold;
+}
+
+.container-sosmed{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+	
+}
+
+.iconlink-sosmed{
+	display: inline-block;
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.iconlink-sosmed:hover{
+	transform: scale(1.2);
+}
+
+.image-linksosmed{
+	width: 100%;
+}
+
+.text-linksosmed{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#facebook-textlink{
+	color: rgb(37, 37, 185);
+}
+
+
+
+#youtube-textlink{
+	color: rgb(211, 24, 24);
+}
+
+#bottom-brand{
+	display: block;
+	width: 40%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 130px;
+}
+
+footer{
+	background-color: skyblue;
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: yellow;
+}
+
+
+/* UKURAN TABLET */
+@media screen and (max-width: 1000px){
+
+	.logo h1{
+		font-size: 25px;
+	}
+
+	.navlink-list{
+		width: 70%;
+	}
+
+	#jumbotron-image{
+		margin-top: 60px;
+	}
+
+	article{
+		flex-direction: column;
+	}
+
+	.image-article{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.container-textarticle{
+		text-align: center;
+	}
+
+	#artikel-wisatasekitar{
+		flex-direction: column;
+	}
+
+	#container-textarticle-resepmakanan{
+		padding-left: 0px;
+	}
+	
+	#container-textarticle-wisatasekitar{
+		padding-right: 0px;
+	}
+
+	.judul-artikel{
+		font-size: 40px;
+	}
+
+	.container-sumber{
+		width: 85%;
+	}
+
+
+	.container-sosmed{
+		width: 80%;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* UKURAN MOBILE */
+
+
+/* NAVBAR & HEADER */
+@media screen and (max-width: 600px){
+	.container-navbar{
+		justify-content: space-evenly;
+		padding-top: 0;
+	}
+
+	.navmenu{
+		display:block;
+		background-color: rgb(24, 228, 255);
+	}
+
+	.logo, .navmenu{
+		margin: auto;
+	}
+
+
+	nav{
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		z-index: -1;
+		transform: translateX(-100%);
+		transition: all 1s;
+		background-color: rgb(233, 240, 242);
+	}
+
+	.container.navbar.slide{
+		background-color:  rgb(243, 251, 252);
+	}
+
+	nav.slide{
+		transform: translateX(0);
+		height: 100vh;
+		
+	}
+
+	.list-materiusaha{
+		position: relative;
+		z-index: 1;
+	}
+
+	.logo-captionbrand{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#donasi-btn{
+		position: absolute;
+		margin: auto;
+		bottom: 80px;
+		padding: -1px 25px ;
+		border-radius: 8px;
+	}
+
+	#copyright-mobile{
+		display: block;
+		position: absolute;
+		bottom: 40px;
+		font-weight: bold;
+		color: rgb(69, 67, 67);
+	}
+
+	#jumbotron-image{
+		display: none;
+	}
+
+	#jumbotron-mobile{
+		display: block;
+		width: 100%;
+		padding-top:70px;
+	}
+
+	.iconlink-sosmed{
+		width: 60px;
+	}
+
+	.text-linksosmed{
+		font-size: 10px;
+	}
+
+}
