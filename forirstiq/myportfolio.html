@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet" />
+    <!-- my css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* JUMBOTRON */
+      section {
+        padding-top: 5rem;
+      }
+      .jumbotron {
+        padding-top: 11rem;
+        background-image: url("../img/MAHSAN-FORISTIQ.jpg");
+        background-size: cover;
+      }
+
+      path {
+        margin-bottom: -0.7px;
+      }
+
+      .jumbotron img {
+        width: 300px;
+      }
+
+      .jumbotron h1,
+      .jumbotron p {
+        color: white;
+      }
+
+      /* ABOUT-IMAGE */
+
+      .about-image {
+        width: 120px;
+        height: 121px;
+        border: 2px solid aqua;
+      }
+
+      .keterangan {
+        margin-left: 10px;
+      }
+
+      .myinfo {
+        font-size: 20px;
+      }
+
+      #blogs {
+        background-color: #c1d4e7;
+      }
+
+      .myinfo-container {
+        display: flex;
+      }
+
+      /* FOOTER */
+      footer {
+        background-color: #0aa9a9;
+      }
+
+      /*  NOTEBOOK DISPLAY */
+      @media screen and (max-width: 1210px) {
+        .myinfo-container {
+          margin-top: 10px;
+        }
+        .myinfo {
+          font-size: 15px;
+        }
+      }
+
+      /* MOBILE DISPLAY */
+
+      @media screen and (max-width: 480px) {
+        .myinfo-container {
+          display: block;
+          text-align: center;
+        }
+      }
+    </style>
+
+    <title>MAHSAN | FORISTIQ</title>
+  </head>
+  <body id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background-color: rgb(9, 187, 187)">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.foristiq.eu.org">MAHSAN | FORISTIQ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://foristiq.eu.org/">Foristiq</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- JUMBOTRON -->
+    <section class="jumbotron text-center">
+      <img src="../img/mcaksan.png" alt="MAHSAN" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">MAHSAN | FORISTIQ</h1>
+      <p class="lead">Food blogger and tech enthusiast</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L60,149.3C120,139,240,117,360,117.3C480,117,600,139,720,154.7C840,171,960,181,1080,170.7C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- AKHIR JUMBOTRON -->
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>About me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 myinfo-container">
+            <img src="../img/mc.JPG" alt="Mahsan" class="about-image rounded-circle" />
+            <div class="keterangan">
+              <h4>Food blogger</h4>
+              <p class="myinfo">A blogger that upload food recipes and food stuff information</p>
+            </div>
+          </div>
+          <div class="col-lg-4 myinfo-container">
+            <img src="../img/mahsandev.jpg" alt="Mahsan" class="about-image rounded-circle" />
+            <div class="keterangan">
+              <h4>Web designer</h4>
+              <p class="myinfo">Person that interested on field of tech information and web design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#c1d4e7"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- AKHIR ABOUT -->
+
+    <!-- BLOGS -->
+    <section id="blogs">
+      <div class="container text-center">
+        <div class="row mb-4">
+          <div class="col">
+            <h2>Blogs</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 mb-3">
+            <div class="card shadow rounded">
+              <img src="../img/ForistiqFoodLogo.png" class="card-img-top" alt="foristiq food" />
+              <div class="card-body">
+                <h5 class="card-title">Foristiq Food</h5>
+                <p class="card-text">A blog that uploaded food recipes and food stuf informations</p>
+                <a href="#" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <div class="card shadow rounded">
+              <img src="../img/ForistiqTechLogo.png" class="card-img-top" alt="foristiq tech" />
+              <div class="card-body">
+                <h5 class="card-title">Foristiq Tech</h5>
+                <p class="card-text">A blog that uploaded tech informations and tech development</p>
+                <a href="#" class="btn btn-primary">explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,224L48,234.7C96,245,192,267,288,277.3C384,288,480,288,576,272C672,256,768,224,864,224C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- AKHIR BLOGS -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form name="foristiq-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="Name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="Email" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" name="Message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-send">Send</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+            <div class="alert berhasil alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+              <strong>Success,</strong> your message on our review.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert gagal alert-danger alert-dismissible fade show mt-3 d-none" role="alert">
+              <strong>Failed,</strong> We can't process your message, <strong>Please try again!!!.</strong>.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0aa9a9"
+          fill-opacity="1"
+          d="M0,256L80,266.7C160,277,320,299,480,304C640,309,800,299,960,288C1120,277,1280,267,1360,261.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- AKHIR CONTACT -->
+    <footer class="text-white text-center fw-normal pb-3">
+      <a href="https://foristiq.eu.org/"><img src="../img/squarelogo.png" alt="Foristiq" style="width: 50px" /></a>
+      <p>Address; RT01 Bebie Timuq, Desa Mekar Dama, Kecamatan Praya, Kabupaten Lombok Tengah, Nusa Tenggara Barat, Indonesia <br />copyright &copy; by Foristiq</p>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <!-- AKHIR FOOTER -->
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT GOOGLE SHEETS -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwbzHCyIM-Ws4_v6PTQISvq8P2x3pKXIhEGBiu9ZeKVWl0SNZ3LWKWyzbdU6QNKLf9QOg/exec";
+      const form = document.forms["foristiq-contact-form"];
+      const btnSend = document.querySelector(".btn-send");
+      const btnLoading = document.querySelector(".btn-loading");
+      const alertBerhasil = document.querySelector(".berhasil");
+      const alertGagal = document.querySelector(".gagal");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // show loading btn & display none send btn
+        btnLoading.classList.toggle("d-none");
+        btnSend.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // show send button and display none loading btn
+            // show success alert
+            btnLoading.classList.toggle("d-none");
+            btnSend.classList.toggle("d-none");
+            alertBerhasil.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => {
+            // show faild alert
+            btnLoading.classList.toggle("d-none");
+            btnSend.classList.toggle("d-none");
+            alertGagal.classList.toggle("d-none");
+            form.reset();
+            console.log("Error!", response);
+          });
+      });
+    </script>
+  </body>
+</html>
