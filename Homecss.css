@@ -110,7 +110,7 @@ li a:active {
   box-shadow: inset -7px -7px 17px rgb(126, 171, 247), inset 7px 7px 17px rgba(70, 70, 70, 0.15);
 }
 .menu-toggle {
-  color: #24f8f5;
+  color: #054746;
   float: right;
   height: 50px;
   line-height: 25px;
@@ -412,7 +412,7 @@ li a:active {
   }
 
   .menu-toggle:active {
-    color: #2459f8;
+    color: #60d4e6;
   }
   nav {
     position: absolute;
@@ -447,6 +447,10 @@ li a:active {
     border: 1px solid #f7f7f7;
     box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6), 7px 7px 17px rgba(70, 70, 70, 0.15);
     /* border-bottom: 1px solid rgba(0,0,0,.2); */
+  }
+
+  li a:active.nav {
+    visibility: hidden;
   }
   #con-gallery {
     column-count: 3;
